@@ -1,9 +1,149 @@
 <html><head> 
-  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> 
-  <title>白给</title> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>落冥迦の博客</title> 
+  <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .nav-toggle {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #555;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            z-index: 999;
+            cursor: pointer;
+        }
+
+        .nav-toggle:hover {
+            background-color: #333;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* 媒体查询 */
+        @media only screen and (max-width: 600px) {
+            header {
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .nav-toggle {
+                top: 10px;
+                right: 10px;
+            }
+
+            main {
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+
+        /* 侧滑菜单动画 */
+        .menu-hidden {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-show {
+            transform: translateX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        /* 侧滑菜单样式 */
+        .menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            z-index: 998;
+            transform: translateX(100%);
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu ul li {
+            margin-bottom: 10px;
+        }
+
+        .menu ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style> 
   <script src="js/jq.js"></script> 
  </head> 
- <body id="body"> 
-  <div id="v1">    原神   </div>  
+ <body id="v1"> 
+  <header id="v2"> 
+   <h1 id="v3">落冥迦の博客</h1> 
+  </header> 
+  <div id="navToggle" class="nav-toggle">
+    你好！ 
+  </div> 
+  <nav id="menu" class="menu"> 
+   <ul id="v4"> 
+    <li id="v5"><a id="v6" href="#">首页</a></li> 
+    <li id="v7"><a id="v8" href="#">文章</a></li> 
+    <li id="v9"><a id="v10" href="#">关于我</a></li> 
+   </ul> 
+  </nav> 
+  <main id="v11"> 
+   <h2 id="v12">最新文章</h2> 
+   <article id="v13"> 
+    <h3 id="v14">最新的博客~</h3> 
+    <p id="v15">Github注册成功！</p> 
+    <a id="v16" href="./page01.html">阅读更多</a> 
+   </article> 
+   <article id="v17"> 
+    <h3 id="v18">文章标题</h3> 
+    <p id="v19">这里是文章的摘要内容。Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, ipsa.</p> 
+    <a id="v20" href="#">阅读更多</a> 
+   </article> 
+  </main> 
+  <footer id="v21">    © 2023 个人博客   </footer>  
   </body>
-</html>
+  </html>
